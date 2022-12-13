@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+  dnsmasq:
+    image: 'akinbicer/dnsmasq'
+    build:
+      context: '.'
+      dockerfile: dockerfile-dnsmasq
+    container_name: dnsmasq
+    restart: always
+    ports:
+      - '50053:50053'

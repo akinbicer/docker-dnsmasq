@@ -4,7 +4,7 @@ services:
     image: 'akinbicer/dnsmasq'
     build:
       context: '.'
-      dockerfile: dockerfile-dnsmasq
+      dockerfile: Dockerfile
     container_name: dnsmasq
     restart: always
     ports:

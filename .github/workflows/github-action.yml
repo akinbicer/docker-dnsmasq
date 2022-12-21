@@ -36,6 +36,8 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          tags: $DOCKERHUB_USERNAME/$DOCKERHUB_REPOSITORY_NAME:latest,$DOCKERHUB_USERNAME/$DOCKERHUB_REPOSITORY_NAME:${{ steps.date.outputs.date }}
+          tags: | 
+            $DOCKERHUB_USERNAME/$DOCKERHUB_REPOSITORY_NAME:latest
+            $DOCKERHUB_USERNAME/$DOCKERHUB_REPOSITORY_NAME:${{ steps.date.outputs.date }}
           platforms: linux/amd64
           push: true

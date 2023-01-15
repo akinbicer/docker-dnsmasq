@@ -21,3 +21,6 @@ docker compose up
 
 To stop the server, enter `Ctrl+C` followed by `docker compose down`. If running
 in detached mode, you will only need to enter `docker compose down`.
+
+## Feedback
+If you have any feedback, please reach out to us at akin.bicer@outlook.com.tr

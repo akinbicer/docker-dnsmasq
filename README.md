@@ -10,7 +10,7 @@ Specify a set of domains to map to ips and ports as below. Google DNS addresses 
 
 The above configuration sends anything with a `local` domain to `127.0.0.1`, other requests go to Google DNS addresses
 
-### Deploying using Docker
+## Deploying using Docker
 
 Start the DNSMasq server. Add the option `-d` or `--detach` to run in the
 background.
